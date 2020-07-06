@@ -37,22 +37,24 @@ $(function(){
     ctx2.fillStyle = "#999";
     ctx2.fillRect(0,0, canvas.width, canvas.height); // 塗りつぶし
     
-    $('#child').mousedown(function(e) {
+    $('#child').on('mousedown touchstart', function (e) {
         isDrawing = true;
-        startX = e.pageX - $(this).offset().left - borderWidth;
-        startY = e.pageY - $(this).offset().top - borderWidth;
-        })
-        .mousemove(function(e) {
-            if(!isDrawing) return;
-            x = e.pageX - $(this).offset().left - borderWidth;
-            y = e.pageY - $(this).offset().top - borderWidth;
-            ctx2.beginPath();
-            ctx2.moveTo(x, y);
-            ctx2.clearRect(x,y,20,20); // 切り抜き
-            startX = x;
-            startY = y;
-        })
-        .mouseend(function(e){
+        pageX = e.pageX ? e.pageX : e.changedTouches[0].pageX
+        pageY = e.pageY ? e.pageY : e.changedTouches[0].pageY
+        startX = pageX - $(this).offset().left - borderWidth;
+        startY = pageY - $(this).offset().top - borderWidth;
+    }).on('mousemove touchmove', function (e) {
+        if (!isDrawing) return;
+        pageX = e.pageX ? e.pageX : e.changedTouches[0].pageX
+        pageY = e.pageY ? e.pageY : e.changedTouches[0].pageY
+        x = pageX - $(this).offset().left - borderWidth;
+        y = pageY - $(this).offset().top - borderWidth;
+        ctx2.beginPath();
+        ctx2.moveTo(x, y);
+        ctx2.clearRect(x, y, 20, 20); // 切り抜き
+        startX = x;
+        startY = y;
+    }).on('mouseup touchend', function (e) {
             isDrawing = false;
         })
 });
