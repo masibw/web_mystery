@@ -52,7 +52,7 @@ $(function(){
             startX = x;
             startY = y;
         })
-        .mouseend(function(e){
+        .mouseup(function(e){
             isDrawing = false;
         })
 });
