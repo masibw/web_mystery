@@ -3,8 +3,11 @@ canvas{
 	position: absolute;
 }
 #parent{
-	border: 10px solid;
+	border: 3px dotted;
 }
 #child{
-    border: 10px solid #888;
+    border: 3px dotted rgb(0, 0, 0);
 }
+body {
+	background-color:rgb(188,167,141);
+	}
