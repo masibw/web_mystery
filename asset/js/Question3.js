@@ -52,3 +52,15 @@ $(function(){
             isDrawing = false;
         })
 });
+var movefun = function( event ){
+	event.preventDefault();
+}
+// スクロールを無効にする
+$("対象要素").on('touchmove.noScroll', function(e) {
+    e.preventDefault();
+});
+ // スクロール停止の処理
+window.addEventListener( 'touchmove' , movefun , { passive: false } );
+ 
+// スクロール停止することを停止する処理
+window.removeEventListener( 'touchmove' , movefun, { passive: false } );
