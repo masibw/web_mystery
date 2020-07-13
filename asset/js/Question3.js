@@ -23,8 +23,8 @@ $(function(){
     
     lotString = "アタリを消してください";
     
-    ctx.fillText(lotString, 150, 110, 300); // (文字,始点x,y,最大横幅)に文字を描画
-    ctx.strokeText(lotString, 150, 110, 300); // 縁取り文字を描画
+    ctx.fillText(lotString, 180, 150, 300); // (文字,始点x,y,最大横幅)に文字を描画
+    ctx.strokeText(lotString, 180, 150, 300); // 縁取り文字を描画
 
     // 前面レイヤ
     // 四角形の描画
