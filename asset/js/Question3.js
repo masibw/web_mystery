@@ -52,3 +52,6 @@ $(function(){
             isDrawing = false;
         })
 });
+$(window).on('touchmove.noScroll', function(e) {
+    e.preventDefault();
+});
