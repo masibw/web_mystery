@@ -15,20 +15,9 @@ $(function(){
         isDrawing = false;
         lotString = null;
 
-    // 背面レイヤ
-    // 文字の描画
-    ctx.font = 'bold 50px Arial';
-    ctx.textAlign = 'center';
-    ctx.fillStyle = 'orange';
-    
-    lotString = "アタリを消してください";
-    
-    ctx.fillText(lotString, 180, 150, 300); // (文字,始点x,y,最大横幅)に文字を描画
-    ctx.strokeText(lotString, 180, 150, 300); // 縁取り文字を描画
-
     // 前面レイヤ
     // 四角形の描画
-    ctx2.fillStyle = "rgb(188,167,141)";
+    ctx2.fillStyle = "rgb(255,255,255)";
     ctx2.fillRect(0,0, canvas.width, canvas.height); // 塗りつぶし
     
     $('#child').on('mousedown touchstart', function (e) {
