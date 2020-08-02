@@ -15,27 +15,30 @@ $(function(){
         isDrawing = false;
         lotString = null;
 
-    // 背面レイヤ
-    // 文字の描画
-    ctx.font = 'bold 50px Arial';
-    ctx.textAlign = 'center';
-    ctx.fillStyle = 'orange';
-    
-    lotString = "アタリを消してください";
-    
-    ctx.fillText(lotString, 180, 150, 300); // (文字,始点x,y,最大横幅)に文字を描画
-    ctx.strokeText(lotString, 180, 150, 300); // 縁取り文字を描画
-
     // 前面レイヤ
     // 四角形の描画
-    ctx2.fillStyle = "rgb(188,167,141)";
-    ctx2.fillRect(0,0, canvas.width, canvas.height); // 塗りつぶし
+    $('canvas').get(0).width = $(window).width();
+    $('canvas').get(0).height = $(window).height();
+    $('canvas').get(1).width = $(window).width();
+    $('canvas').get(1).height = $(window).height();
+
+    const layerImage = new Image()
+    layerImage.src = "./img/scratch3.png"
+    layerImage.width = $(window).width();
+    layerImage.height = $(window).height();
+    console.log(layerImage.width,layerImage.height)
+    layerImage.onload = () =>{
+    ctx2.drawImage(layerImage,0,0,layerImage.width,layerImage.height);
+    };
     
-    $('#child').on('mousedown touchstart', function (e) {
+$('#child').on('mousedown touchstart', function (e) {
         isDrawing = true;
         pageX = e.pageX ? e.pageX : e.changedTouches[0].pageX
         pageY = e.pageY ? e.pageY : e.changedTouches[0].pageY
+        console.log(pageX,pageY)
         startX = pageX - $(this).offset().left - borderWidth;
+        console.log($(this).offset())
+        console.log(borderWidth)
         startY = pageY - $(this).offset().top - borderWidth;
     }).on('mousemove touchmove', function (e) {
         if (!isDrawing) return;
