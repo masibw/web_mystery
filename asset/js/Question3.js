@@ -15,7 +15,6 @@ $(function(){
         isDrawing = false;
         lotString = null;
 
-    // 前面レイヤ
     // 四角形の描画
     $('canvas').get(0).width = $(window).width();
     $('canvas').get(0).height = $(window).height();
@@ -23,7 +22,7 @@ $(function(){
     $('canvas').get(1).height = $(window).height();
 
     const layerImage = new Image()
-    layerImage.src = "./img/scratch3.png"
+    layerImage.src = "./img/scr2.png"
     layerImage.width = $(window).width();
     layerImage.height = $(window).height();
     console.log(layerImage.width,layerImage.height)
