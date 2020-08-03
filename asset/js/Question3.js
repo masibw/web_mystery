@@ -23,7 +23,7 @@ $(function () {
   $("canvas").get(1).height = $(window).height();
 
   const layerImage = new Image();
-    layerImage.src = "./img/scratch3.png";
+    layerImage.src = "./img/scr2.png";
     if ($(window).width() <= 480) {
      layerImage.width = $("#scratch").width();
      layerImage.height = $("#scratch").height();
@@ -37,7 +37,6 @@ $(function () {
        // 前面レイヤ
   //回転
         if ($(window).width() <= 480) {
-              console.log('a')
            ctx2.translate(0,$(window).height()/2-layerImage.height/2)
           }
         
