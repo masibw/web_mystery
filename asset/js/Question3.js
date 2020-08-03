@@ -29,7 +29,6 @@ $(function () {
        layerImage.height = $("#scratch").height();
 
  
-  console.log(layerImage.width, layerImage.height);
     layerImage.onload = () => {
        // 前面レイヤ
   //回転
@@ -45,10 +44,7 @@ $(function () {
       isDrawing = true;
       pageX = e.pageX ? e.pageX : e.changedTouches[0].pageX;
       pageY = e.pageY ? e.pageY : e.changedTouches[0].pageY;
-      console.log(pageX, pageY);
       startX = pageX - $(this).offset().left - borderWidth;
-      console.log($(this).offset());
-      console.log(borderWidth);
       startY = pageY - $(this).offset().top - borderWidth;
     })
     .on("mousemove touchmove", function (e) {
