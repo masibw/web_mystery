@@ -24,13 +24,10 @@ $(function () {
 
   const layerImage = new Image();
     layerImage.src = "./img/scr2.png";
-    if ($(window).width() <= 480) {
-     layerImage.width = $("#scratch").width();
-     layerImage.height = $("#scratch").height();
-    } else {
+
        layerImage.width = $("#scratch").width();
        layerImage.height = $("#scratch").height();
-    }
+
  
   console.log(layerImage.width, layerImage.height);
     layerImage.onload = () => {
