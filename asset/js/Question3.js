@@ -24,7 +24,7 @@ $(function () {
 
   const layerImage = new Image();
     layerImage.src = "./img/scr2.png";
-    if ($(window).width() <= 1024) {
+    if ($(window).width() <= 480) {
      layerImage.width = $("#scratch").width();
      layerImage.height = $("#scratch").height();
     } else {
@@ -36,7 +36,7 @@ $(function () {
     layerImage.onload = () => {
        // 前面レイヤ
   //回転
-        if ($(window).width() <= 1024) {
+        if ($(window).width() <= 480) {
            ctx2.translate(0,$(window).height()/2-layerImage.height/2)
           }
         
