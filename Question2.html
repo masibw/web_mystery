@@ -3,18 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>迷路</title>
-    <link rel="stylesheet" href="css/Question2.css">
+    <link rel="stylesheet" href="./asset/css/Question2.css">
   </head>
 
 <body>
-  <canvas id="mycanvas" width="500" height="1000">
+  <div id="outer">
+    <canvas id="mycanvas" width="288" height="288">
+      </canvas>
 
-  </canvas>
-
-  <img src="img/up.png" id="up">
-  <img src="img/left.png" id="left">
-  <img src="img/right.png" id="right">
-  <img src="img/down.png" id="down">
+ <div id="arrows">
+  <img width="60" height="60"></img>
+  <img src="./img/up.png" id="up">
+  <div width="60" height="60"></div>
+  <img src="./img/left.png" id="left">
+  <img width="60" height="60"></img>
+  <img src="./img/right.png" id="right">
+  <div width="60" height="60"></div>
+    <img width="60" height="60"></img>
+  <img src="./img/down.png" id="down">
+  </div>
 
     <!-- <div id="button">
       <div id="up">up</div>
@@ -22,9 +29,9 @@
       <div id="left">left</div>
       <div id="down">down</div>
    </div> -->
+  </div>
 
 
-
-  <script src="js/meiro.js"></script>
+  <script src="./asset/js/meiro.js"></script>
 </body>
 </html>

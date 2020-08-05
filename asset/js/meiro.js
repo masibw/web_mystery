@@ -26,7 +26,7 @@
     //動かすもののオブジェクトを作成
     let ball = new Object();
     ball.img = new Image();
-    ball.img.src = 'img/kaizokusen1.png';
+    ball.img.src = '../../img/kaizokusen1.png';
     ball.x =32;
     ball.y =32;
     ball.move = 0;
@@ -40,11 +40,11 @@
 
     // //マス目
     const squares = new Image();
-    squares.src = "img/squares_mozi_white.png";
+    squares.src = "../../img/squares_mozi_white.png";
 
     //背景画像
-    const background =new Image();
-    background.src ="img/back2.png";
+    // const background =new Image();
+    // background.src ="../../img/back2.png";
 
 
 
@@ -98,8 +98,9 @@
       //マウスが押されている場合は、ボールが移動する
       if (ball.move === 0) {
         if (touch.left === true) {
-          let x=Math.floor(ball.x/32-1);
-          let y=Math.floor(ball.y/32);
+          let x=Math.floor((ball.x-1)/32);
+          let y = Math.floor(ball.y / 32);
+          console.log(x,y)
           if(map[x][y]===0){
             ball.move = 32;
             touch_position = 'left';
@@ -108,7 +109,8 @@
         }
           if (touch.up === true) {
             let x=Math.floor(ball.x/32);
-            let y=Math.floor(ball.y/32-1);
+            let y = Math.floor((ball.y - 1) / 32);
+              console.log(x, y);
               if(map[x][y]===0){
               ball.move = 32;
               touch_position = 'up';
@@ -116,8 +118,9 @@
             }
           }
           if (touch.right === true) {
-            let y=Math.floor(ball.y/32);
-            let x=Math.floor(ball.x/32+1);
+            let x=Math.ceil(ball.y/32);
+            let y = Math.ceil((ball.x + 1) / 32);
+              console.log(x, y);
               if(map[x][y]===0){
                 ball.move = 32;
               touch_position = 'right';
@@ -126,8 +129,9 @@
           }
 
           if (touch.down === true) {
-            let x=Math.floor(ball.x/32);
-            let y=Math.floor(ball.y/32+1);
+            let x=Math.ceil(ball.x/32);
+            let y = Math.ceil((ball.y + 1) / 32);
+              console.log(x, y);
             if(map[x][y]===0){
               ball.move = 32;
               touch_position = 'down';
