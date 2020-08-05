@@ -18,10 +18,165 @@
     left: 37%;
     z-index: 10;
   }
-  p {
+  .figure {
+    margin: 20px 0px 0px 0px;
+  }
+  .J p {
     position: absolute;
-    left: 378px;
-    bottom: 240px;
+    left: 377px;
+    bottom: 220px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .M p {
+    position: absolute;
+    left: 418.5px;
+    bottom: 220px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .C p {
+    position: absolute;
+    left: 463.5px;
+    bottom: 220px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .V p {
+    position: absolute;
+    left: 508px;
+    bottom: 220px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .F p {
+    position: absolute;
+    left: 554px;
+    bottom: 220px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .R p {
+    position: absolute;
+    left: 376.5px;
+    bottom: 171px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .H p {
+    position: absolute;
+    left: 420.2px;
+    bottom: 171px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .P p {
+    position: absolute;
+    left: 465px;
+    bottom: 171px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .B p {
+    position: absolute;
+    left: 508px;
+    bottom: 171px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .G p {
+    position: absolute;
+    left: 552px;
+    bottom: 171px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .A p {
+    position: absolute;
+    left: 376px;
+    bottom: 123px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .U p {
+    position: absolute;
+    left: 420px;
+    bottom: 123px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .D p {
+    position: absolute;
+    left: 464.5px;
+    bottom: 123px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .S p {
+    position: absolute;
+    left: 508.5px;
+    bottom: 123px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .O p {
+    position: absolute;
+    left: 552px;
+    bottom: 123px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .N p {
+    position: absolute;
+    left: 376px;
+    bottom: 74px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .E p {
+    position: absolute;
+    left: 422px;
+    bottom: 74px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .Y p {
+    position: absolute;
+    left: 465px;
+    bottom: 74px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .I p {
+    position: absolute;
+    left: 513px;
+    bottom: 74px;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+  .T p {
+    position: absolute;
+    left: 553px;
+    bottom: 74px;
     z-index: 20;
     font-weight: 600;
     font-size: 1.2em;
@@ -49,10 +204,165 @@
     left: 37%;
     z-index: 10;
   }
-  p {
+  .figure {
+    margin: 1.5% 0% 0% 0%;
+  }
+  .J p {
     position: absolute;
-    left: 38.5%;
-    bottom: 49.73%;
+    left: 38.4%;
+    bottom: 49.05%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .M p {
+    position: absolute;
+    left: 42.7%;
+    bottom: 49.05%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .C p {
+    position: absolute;
+    left: 47.3%;
+    bottom: 49.05%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .V p {
+    position: absolute;
+    left: 51.8%;
+    bottom: 49.05%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .F p {
+    position: absolute;
+    left: 56.5%;
+    bottom: 49.05%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .R p {
+    position: absolute;
+    left: 38.4%;
+    bottom: 46.8%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .H p {
+    position: absolute;
+    left: 42.8%;
+    bottom: 46.8%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .P p {
+    position: absolute;
+    left: 47.4%;
+    bottom: 46.8%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .B p {
+    position: absolute;
+    left: 51.85%;
+    bottom: 46.8%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .G p {
+    position: absolute;
+    left: 56.2%;
+    bottom: 46.8%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .A p {
+    position: absolute;
+    left: 38.35%;
+    bottom: 44.5%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .U p {
+    position: absolute;
+    left: 42.83%;
+    bottom: 44.5%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .D p {
+    position: absolute;
+    left: 47.35%;
+    bottom: 44.5%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .S p {
+    position: absolute;
+    left: 51.87%;
+    bottom: 44.5%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .O p {
+    position: absolute;
+    left: 56.27%;
+    bottom: 44.5%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .N p {
+    position: absolute;
+    left: 38.35%;
+    bottom: 42.22%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .E p {
+    position: absolute;
+    left: 43%;
+    bottom: 42.22%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .Y p {
+    position: absolute;
+    left: 47.3%;
+    bottom: 42.22%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .I p {
+    position: absolute;
+    left: 52.3%;
+    bottom: 42.22%;
+    z-index: 20;
+    font-weight: 600;
+    font-size: 1.3em;
+  }
+  .T p {
+    position: absolute;
+    left: 56.4%;
+    bottom: 42.22%;
     z-index: 20;
     font-weight: 600;
     font-size: 1.3em;
