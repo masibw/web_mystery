@@ -3,45 +3,66 @@ canvas{
 	position: absolute;
 	user-select: none;
 }
+body{
+	margin:0;	
+	user-select:none;
+}
+img{
+	margin:0;
+	padding:0;
+}
 /* ↓横向きの場合のスタイル↓ */
 @media screen and (orientation: landscape) {
-	body {
-	background-image: url("../../img/scratch.png");
+	#scratch{
 	background-repeat: no-repeat; 
 	background-attachment: fixed;
-	background-size: 100% 100%;
-	margin:0;
+	width:100%;
+	height:100vh;
 	}
 	h2 {
 	  margin: 7% 0% 0% 0%;
 	  text-align:center;
 	  font-size: 1.2em;
 	}
-	img {
-	  width: 4%;
-	  position: relative;
-	  top: 3px;
-	  left: 37%;
-	  z-index: 10;
+	p {
+	  position: absolute;
+	  left: 378px;
+	  bottom: 240px;
+	  z-index: 20;
+	  font-weight: 600;
+	  font-size: 1.2em;
 	}
   }
   
   /* ↓縦向きの場合のスタイル↓ */
   @media screen and (orientation: portrait) {
-	body {
-	background-image: url("../../img/scratch.png");
-	background-repeat: no-repeat; 
-	background-attachment: fixed;
-	background-size: 100% auto;
-	background-position: center;
-	margin:0;
+	
+	h2 {
+	  margin: 95% 0% 0% 0%;
+	  text-align: center;
+	  font-size: 1.3em;
 	}
-	img {
-	  width: 4%;
-	  position: relative;
-	  top: 3px;
-	  left: 37%;
-	  z-index: 10;
+	#outer{
+ position:relative;
+ height:100vh;
+ width:100vw;
+}
+	#scratch{
+  width:100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	z-index:-3;
+	}
+	p {
+	  position: absolute;
+	  left: 38.5%;
+	  bottom: 49.73%;
+	  z-index: 20;
+	  font-weight: 600;
+	  font-size: 1.3em;
 	}
   }
   
