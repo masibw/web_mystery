@@ -6,6 +6,7 @@
     background-size: 100% 100%;
     /* background-position: center; */
     }
+  }
   @media screen and (orientation: portrait) {
 
     body {
@@ -16,3 +17,4 @@
       /* background-position: center; */
       }
 
+    }
