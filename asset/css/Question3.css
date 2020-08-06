@@ -13,7 +13,7 @@ img{
 }
 /* ↓横向きの場合のスタイル↓ */
 @media screen and (orientation: landscape) {
-	#scratch{
+	.lazyload{
 	background-repeat: no-repeat; 
 	background-attachment: fixed;
 	width:100%;
@@ -47,7 +47,7 @@ img{
  height:100vh;
  width:100vw;
 }
-	#scratch{
+	.lazyload{
   width:100%;
   position: absolute;
   top: 50%;
