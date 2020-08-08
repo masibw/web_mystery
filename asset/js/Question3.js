@@ -25,8 +25,8 @@ $(function () {
   const layerImage = new Image();
     layerImage.src = "./img/scr2.png";
 
-       layerImage.width = $("#scratch").width();
-       layerImage.height = $("#scratch").height();
+       layerImage.width = $(".lazyload").width();
+       layerImage.height = $(".lazyload").height();
 
  
     layerImage.onload = () => {
