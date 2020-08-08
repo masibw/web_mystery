@@ -1,6 +1,6 @@
 body {
   background-image:url(../../img/background.png);
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
 	margin:0;
@@ -18,7 +18,7 @@ body {
   color: aliceblue;
 }
 
-/* 
+/*
 img{
   width: 100px;
   height: 100px;
