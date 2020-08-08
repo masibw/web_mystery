@@ -22,7 +22,7 @@
 
   .thumnail-right-box {
     width: 30%;
-    margin: 0;
+    margin: 0 35% 20%;
     padding: 0;
     list-style: none;
   }
@@ -239,6 +239,40 @@
     text-align: center;
     font-size: 1.3em;
   }
+  .flex-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex-box img {
+    vertical-align: top;
+  }
+
+  .thumnail-right-box {
+    width: 30%;
+    margin: 0 35% 20%;
+    padding: 0;
+    list-style: none;
+  }
+
+  .thumnail-right-box li {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    margin: 0.01rem 0 0.01rem auto;
+  }
+  .thumnail-right-box li img {
+    width: 100%;
+    margin: 0 0 auto;
+  }
+  p{
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0.6em;
+    margin-inline-start: 1rem;
+    margin-inline-end: 0;
+  }
+
   /* .figure img {
     width: 4%;
     position: relative;

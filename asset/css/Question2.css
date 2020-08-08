@@ -1,6 +1,6 @@
 body {
   background-image:url(../../img/background.png);
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
 	margin:0;
@@ -17,8 +17,16 @@ body {
   opacity: 0.8;
   color: aliceblue;
 }
-
-/* 
+#taru{
+  /* margin:18% 30% 80% 30%; */
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  /* transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%); */
+  z-index:-1;
+}
+/*
 img{
   width: 100px;
   height: 100px;
@@ -44,6 +52,7 @@ img{
   top: 50%;
   left: 55%;
   transform: translateY(-50%) translateX(-50%);
-	-webkit-transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  z-index: 1;
 }
 
