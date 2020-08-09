@@ -215,8 +215,8 @@
             }
           }
           if (touch.right === true) {
-            let x=Math.round(ball.y/8);
-            let y = Math.round(ball.x/8+8.5);
+            let x=Math.round(ball.x/8+2.5);
+            let y = Math.round(ball.y/8);
               console.log(y, x);
               if(map[y][x]===0){
                 ball.move = 32;
