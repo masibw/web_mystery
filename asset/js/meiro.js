@@ -24,7 +24,7 @@
 
 //①
         // 4
-         [ 1,1,1,1,1 ,       0,0,0,0,0, 0,0,0,0,0, 0,0,0,0,1, 0,0,0,0,0, 0,0,0,0,0, 0,0,0,0,1,  0,0,0,0,0,             1,1,1,1,1],
+         [ 1,1,1,1,1 ,       0,0,0,0,0, 0,0,0,0,0, 1,1,1,1,1 , 1,1,1,1,1 , 0,0,0,0,0, 0,0,0,0,1,  0,0,0,0,0,             1,1,1,1,1],
         // 5
          [ 1,1,1,1,1 ,       0,0,0,0,0, 0,0,0,0,0,  0,0,0,0,1, 0,0,0,0,0, 0,0,0,0,0, 0,0,0,0,1,  0,0,0,0,0,                   1,1,1,1,1],
         // 6
@@ -188,30 +188,30 @@
       //マウスが押されている場合は、ボールが移動する
       if (ball.move === 0) {
         if (touch.left === true) {
-          let x=Math.floor((ball.x -1 )/8);
-          let y = Math.floor(ball.y / 8);
-          console.log(x,y)
-          if(map[x][y]===0){
+          let x=Math.round(ball.x/8-2.5);
+          let y = Math.round(ball.y / 8);
+          console.log(y,x)
+          if(map[y][x]===0){
             ball.move = 32;
             touch_position = 'left';
             x--;
           }
         }
           if (touch.up === true) {
-            let x=Math.floor(ball.x/8);
-            let y = Math.floor((ball.y - 1) / 8);
-              console.log(x, y);
-              if(map[x][y]===0){
+            let x=Math.round(ball.x/8);
+            let y = Math.round(ball.y / 8-0.5);
+              console.log(y, x);
+              if(map[y][x]===0){
               ball.move = 32;
               touch_position = 'up';
               y++;
             }
           }
           if (touch.right === true) {
-            let x=Math.ceil(ball.y/8);
-            let y = Math.ceil((ball.x + 1) / 8);
-              console.log(x, y);
-              if(map[x][y]===0){
+            let x=Math.round(ball.y/8);
+            let y = Math.round(ball.x/8+8.5);
+              console.log(y, x);
+              if(map[y][x]===0){
                 ball.move = 32;
               touch_position = 'right';
             x++;
@@ -219,10 +219,10 @@
           }
 
           if (touch.down === true) {
-            let x=Math.ceil(ball.x/8);
-            let y = Math.round((ball.y -1) / 8);
-              console.log(x, y);
-            if(map[x][y]===0){
+            let y = Math.round(ball.y/8+2.5);
+            let x=Math.round(ball.x/8);
+              console.log(y, x);
+            if(map[y][x]===0){
               ball.move = 32;
               touch_position = 'down';
               y--;
@@ -233,10 +233,10 @@
         // ball.moveが0より大きい場合は、4pxずつ移動を続ける
               if (ball.move > 0) {
                 ball.move -= 32;
-          if (touch_position === 'left') ball.x -= 3;
-          if (touch_position === 'up') ball.y -= 3;
-          if (touch_position === 'right') ball.x += 3;
-          if (touch_position === 'down') ball.y += 3;
+          if (touch_position === 'left') ball.x -= 4;
+          if (touch_position === 'up') ball.y -= 4;
+          if (touch_position === 'right') ball.x += 4;
+          if (touch_position === 'down') ball.y += 4;
         }
         //ページ移動
         // if(ball.x===96 && ball.y===224){
@@ -298,7 +298,7 @@
     // 壁を描画
     function drawWall(x, y) {
       ctx.fillStyle = wallColor;
-        drawRect(x, y);
+        drawRect(y, x);
     }
 
 
