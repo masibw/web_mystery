@@ -156,7 +156,7 @@
 
 
 
-    function init() {
+  function init() {
       const up = document.getElementById('up');
       const right = document.getElementById('right');
       const left = document.getElementById('left');
@@ -195,8 +195,8 @@
       //マウスが押されている場合は、ボールが移動する
       if (ball.move === 0) {
         if (touch.left === true) {
-          let x=Math.round(ball.x/8-2.5);
-          let y = Math.round(ball.y / 8);
+          let y=Math.round(ball.y/8);
+          let x = Math.round(ball.x / 8-1);
           console.log(y,x)
           if(map[y][x]===0){
             ball.move = 32;
@@ -205,9 +205,9 @@
           }
         }
           if (touch.up === true) {
-            let x=Math.round(ball.x/8);
-            let y = Math.round(ball.y / 8-0.5);
-              console.log(y, x);
+            let y=Math.round(ball.y/8-1);
+            let x = Math.round(ball.x / 8);
+              console.log(x,y);
               if(map[y][x]===0){
               ball.move = 32;
               touch_position = 'up';
@@ -215,8 +215,8 @@
             }
           }
           if (touch.right === true) {
-            let x=Math.round(ball.y/8);
-            let y = Math.round(ball.x/8+8.5);
+            let y=Math.round(ball.y/8);
+            let x = Math.round(ball.x/8+2);
               console.log(y, x);
               if(map[y][x]===0){
                 ball.move = 32;
@@ -226,7 +226,7 @@
           }
 
           if (touch.down === true) {
-            let y = Math.round(ball.y/8+2.5);
+            let y = Math.round(ball.y/8+2);
             let x=Math.round(ball.x/8);
               console.log(y, x);
             if(map[y][x]===0){
