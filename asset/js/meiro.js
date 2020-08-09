@@ -126,7 +126,7 @@
     //動かすもののオブジェクトを作成
     let ball = new Object();
     ball.img = new Image();
-    ball.img.src = './img/kaizokusen_32px.png';
+    ball.img.src = './img/kaizokusen_24px.png';
     ball.x =40;
     ball.y =40;
     ball.move = 0;
