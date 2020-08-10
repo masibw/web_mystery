@@ -1,17 +1,27 @@
 /* ↓横向きの場合のスタイル↓ */
 @media screen and (orientation: landscape) {
   body {
+  height: 100%;
   background-image: url("../../img/background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
   }
+  html,.flex-box{
+    height: 100%;
+
+  }
   h2 {
     margin: 7% 0% 0% 0%;
     text-align:center;
-    font-size: 1.2em;
+    font-size: 0.9em;
+  }
+  li{
+    list-style-type:none;
+
   }
   .flex-box {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
   }
@@ -39,16 +49,23 @@
   } */
   .thumnail-right-box li img {
     width: 100%;
-    margin: 0 0 auto;
+    margin: 0 0 0;
   }
   p{
+    position: absolute;
     display: block;
-    margin-block-start: 0em;
-    margin-block-end: 0.8em;
-    margin-inline-start: 1rem;
+    margin-block-start:1.95em;
+    margin-block-end: 0em;
+    margin-inline-start: 1.5em;
     margin-inline-end: 0;
   }
+/* #J #Y #C #V #F{
+  margin: 0 0 0 1em;
+} */
+/* #R #H #P #B #G{
+  margin: 0 0 0 1em;
 
+} */
   /* img {
     width: 4%;
     position: relative;

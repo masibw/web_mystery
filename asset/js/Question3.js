@@ -1,9 +1,6 @@
 $(function () {
-  var canvas = document.getElementById("parent");
   var canvas2 = document.getElementById("child");
-  if (!canvas || !canvas.getContext) return false;
   if (!canvas2 || !canvas2.getContext) return false;
-  var ctx = canvas.getContext("2d");
   var ctx2 = canvas2.getContext("2d");
 
   var startX,
