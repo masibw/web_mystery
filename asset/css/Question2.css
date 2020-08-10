@@ -17,11 +17,11 @@ body {
   opacity: 0.8;
   color: aliceblue;
 }
-#taru{
+#kaji{
   /* margin:18% 30% 80% 30%; */
   position: absolute;
-  top: 25%;
-  left: 30%;
+  top: 20%;
+  left: 51.5%;
   /* transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%); */
   z-index:-1;
@@ -50,7 +50,7 @@ img{
 #arrows{
   position: absolute;
   top: 50%;
-  left: 55%;
+  left: 65%;
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
   z-index: 1;
