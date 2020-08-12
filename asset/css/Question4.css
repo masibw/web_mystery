@@ -12,7 +12,7 @@
 
   }
   h2 {
-    margin: 7% 0% 0% 0%;
+    margin: 6% 0% 0% 0%;
     text-align:center;
     font-size: 0.9em;
   }
@@ -48,7 +48,7 @@
 
   } */
   .thumnail-right-box li img {
-    width: 100%;
+    width: 90%;
     margin: 0 0 0;
   }
   p{
@@ -58,6 +58,87 @@
     margin-block-end: 0em;
     margin-inline-start: 1.5em;
     margin-inline-end: 0;
+    font-size: 1.3em;
+  }
+  #J p{
+    left: -3.6%;
+    bottom: 73%;
+  }
+  #M p{
+    left: 15%;
+    bottom: 73%;
+  }
+  #C p{
+    left: 35.5%;
+    bottom: 73%;
+  }
+  #V p{
+    left: 56%;
+    bottom: 73%;
+  }
+  #F p{
+    left: 77%;
+    bottom: 73%;
+  }
+  #R p{
+    left: -4%;
+    bottom: 50%;
+  }
+  #H p{
+    left: 16%;
+    bottom: 50%;
+  }
+  #P p{
+    left: 36%;
+    bottom: 50%;
+  }
+  #B p{
+    left: 56%;
+    bottom: 50%;
+  }
+  #G p{
+    left: 76%;
+    bottom: 50%;
+  }
+  #A p{
+    left: -4%;
+    bottom: 28%;
+  }
+  #U p{
+    left: 15.5%;
+    bottom: 27.5%;
+  }
+  #D p{
+    left: 36%;
+    bottom: 28%;
+  }
+  #S p{
+    left: 56%;
+    bottom: 28%;
+  }
+  #O p{
+    left: 76%;
+    bottom: 28%;
+  }
+  #N p{
+    left: -4%;
+    bottom: 5%;
+  }
+  #E p{
+    left: 16%;
+    bottom: 5%;
+  }
+  #Y p{
+    left: 36%;
+    bottom: 5%;
+  }
+  #I p{
+    left: 58%;
+    bottom: 5%;
+  }
+  #T p{
+    left: 76%;
+    bottom: 5%;
   }
 /* #J #Y #C #V #F{
   margin: 0 0 0 1em;
