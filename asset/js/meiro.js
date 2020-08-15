@@ -246,8 +246,8 @@
           if (touch_position === 'down') ball.y += 4;
         }
         //ページ移動
-        if(ball.x===13 && ball.y===36){
-          window.location.href = 'shinkeyear.html';
+        if(36<=ball.y<=38 && 16<=ball.x<=18){
+          window.location.href = 'shinkeatariyear.html';
           }
           requestAnimationFrame(main);
         }
