@@ -11,7 +11,7 @@ body {
 }
 
 #up,#right,#left,#down{
-  background: blue;
+  background:#fbfaf9;
   width: 60px;
   height: 60px;
   opacity: 0.8;
@@ -46,6 +46,7 @@ img{
   left: 35%;
   transform: translateY(-50%) translateX(-50%);
 	-webkit-transform: translateY(-50%) translateX(-50%);
+  opacity:0.9;
 }
 #arrows{
   position: absolute;
