@@ -1,3 +1,5 @@
+
+
 body {
   background-image:url(../../img/background.png);
   background-repeat: no-repeat;
@@ -11,11 +13,17 @@ body {
 }
 
 #up,#right,#left,#down{
-  background: blue;
+  background:#fbfaf9;
   width: 60px;
   height: 60px;
   opacity: 0.8;
   color: aliceblue;
+}
+
+p{
+  display: inline-block;
+  margin-left: 55%;
+  font-family: "HGP創英角ゴシックUB,MS UI Gothic標準";
 }
 #kaji{
   /* margin:18% 30% 80% 30%; */
@@ -46,6 +54,7 @@ img{
   left: 35%;
   transform: translateY(-50%) translateX(-50%);
 	-webkit-transform: translateY(-50%) translateX(-50%);
+  opacity:0.9;
 }
 #arrows{
   position: absolute;
