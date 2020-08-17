@@ -127,8 +127,8 @@
     let ball = new Object();
     ball.img = new Image();
     ball.img.src = './img/kaizokusen_24px.png';
-    ball.x =48;
-    ball.y =48;
+    ball.x =47;
+    ball.y =47;
     ball.move = 0;
     //タッチのオブジェクトを作成
     let touch = new Object();
@@ -234,21 +234,20 @@
               touch_position = 'down';
               y--;
             }
-
           }
         }
+        if(Math.round(ball.y/8===35) && (Math.round(ball.x/8+2===15) || Math.round(ball.x/8+2===16) ||Math.round(ball.x/8+2===17))){
+          window.location.href = './shinkeatariyear.html';
+          }
         // ball.moveが0より大きい場合は、4pxずつ移動を続ける
-              if (ball.move > 0) {
-                ball.move -= 32;
+        if (ball.move > 0) {
+          ball.move -= 32;
           if (touch_position === 'left') ball.x -= 4;
           if (touch_position === 'up') ball.y -= 4;
           if (touch_position === 'right') ball.x += 4;
           if (touch_position === 'down') ball.y += 4;
         }
-        //ページ移動
-        if(36<=ball.y<=38 && 16<=ball.x<=18){
-          window.location.href = 'shinkeatariyear.html';
-          }
+        // ページ移動
           requestAnimationFrame(main);
         }
 
