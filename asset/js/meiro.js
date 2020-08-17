@@ -166,15 +166,15 @@
       const num3 = 39;
       const num4 = 40;
       //マウスが押された時、keydownfunc関数（かんすう）を呼び出す
-        left.addEventListener("mousedown", {event:num1,handleEvent:keydownfunc});
-        up.addEventListener("mousedown", { event: num2, handleEvent: keydownfunc });
-        right.addEventListener("mousedown", { event: num3, handleEvent: keydownfunc });
-        down.addEventListener("mousedown", { event: num4, handleEvent: keydownfunc });
+        left.addEventListener("touchstart", {event:num1,handleEvent:keydownfunc});
+        up.addEventListener("touchstart", { event: num2, handleEvent: keydownfunc });
+        right.addEventListener("touchstart", { event: num3, handleEvent: keydownfunc });
+        down.addEventListener("touchstart", { event: num4, handleEvent: keydownfunc });
         // マウスが放（はな）された時、keydownfunc関数（かんすう）を呼び出す
-        left.addEventListener("mouseup", { event: num1, handleEvent: keyupfunc });
-        up.addEventListener("mouseup", { event: num2, handleEvent: keyupfunc });
-        right.addEventListener("mouseup", { event: num3, handleEvent: keyupfunc });
-        down.addEventListener("mouseup", { event: num4, handleEvent: keyupfunc });
+        left.addEventListener("touchend", { event: num1, handleEvent: keyupfunc });
+        up.addEventListener("touchend", { event: num2, handleEvent: keyupfunc });
+        right.addEventListener("touchend", { event: num3, handleEvent: keyupfunc });
+        down.addEventListener("touchend", { event: num4, handleEvent: keyupfunc });
         main()
       }
 
