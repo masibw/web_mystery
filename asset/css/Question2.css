@@ -1,21 +1,28 @@
+
 body {
   background-image:url(../../img/background.png);
   background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
-	margin:0;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin:0;
 }
 
- #button{
+#button{
   display: flex;
 }
 
 #up,#right,#left,#down{
-  background: blue;
+  background:#fbfaf9;
   width: 60px;
   height: 60px;
   opacity: 0.8;
   color: aliceblue;
+}
+
+p{
+  display: inline-block;
+  margin-left: 55%;
+  font-family: "HGP創英角ゴシックUB,MS UI Gothic標準";
 }
 #kaji{
   /* margin:18% 30% 80% 30%; */
@@ -34,9 +41,9 @@ img{
 
 
 #outer{
- position:relative;
- height:100vh;
- width:100vw;
+  position:relative;
+  height:100vh;
+  width:100vw;
 }
 #mycanvas{
   /* width:100%; */
@@ -45,7 +52,8 @@ img{
   top: 50%;
   left: 35%;
   transform: translateY(-50%) translateX(-50%);
-	-webkit-transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  opacity:0.9;
 }
 #arrows{
   position: absolute;
@@ -55,4 +63,3 @@ img{
   -webkit-transform: translateY(-50%) translateX(-50%);
   z-index: 1;
 }
-
