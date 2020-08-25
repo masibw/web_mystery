@@ -29,8 +29,8 @@
   }
 
   @keyframes moveimg2 {
-    0% { left: 0px; top: 0px;transform: rotate(0deg);}
-    100% { left: 0px; top: 330px; transform: rotate(360deg);}
+    0% { left: 0px; top: 0px;}
+    100% { left: 0px; top: 330px;}
 }
 
   #sample2{
@@ -49,8 +49,8 @@
 
 }
 @keyframes moveimg4 {
-  0% { left: 90px; top: 0px;transform: rotate(0deg);}
-  100% { left: 90px; top: 310px; transform: rotate(360deg);}
+  0% { left: 90px; top: 0px;}
+  100% { left: 90px; top: 310px;}
 }
 
 #sample4{
@@ -69,8 +69,8 @@
 
 }
 @keyframes moveimg6 {
-  0% { left: 35px; top: 0px;transform: rotate(0deg);}
-  100% { left: 40px; top: 300px; transform: rotate(360deg);}
+  0% { left: 35px; top: 0px;}
+  100% { left: 40px; top: 300px;}
 }
 
 #sample6{
