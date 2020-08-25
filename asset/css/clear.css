@@ -19,7 +19,7 @@
     } */
     @keyframes moveimg {
       0% { left: 0px; top: 0px; transform: rotate(0deg);}
-      100% { left: 0px; top: 230px; transform: rotate(360deg); }
+      100% { left: 0px; top: 180px; transform: rotate(360deg); }
   }
 
     #sample1{
@@ -30,7 +30,7 @@
 
   @keyframes moveimg2 {
     0% { left: 0px; top: 0px;}
-    100% { left: 0px; top: 200px;}
+    100% { left: 0px; top: 180px;}
 }
 
   #sample2{
@@ -40,27 +40,27 @@
 }
 @keyframes moveimg3 {
   0% { left: 80px; top: 0px;transform: rotate(0deg);}
-  100% { left: 80px; top: 230px; transform: rotate(360deg);}
+  100% { left: 80px; top: 175px; transform: rotate(360deg);}
 }
 
 #sample3{
-  animation: moveimg3 0.5s infinite;
+  animation: moveimg3 0.7s infinite;
   position: relative;
 
 }
 @keyframes moveimg4 {
-  0% { left: 90px; top: 0px;}
-  100% { left: 90px; top: 260px;}
+  0% { left: 150px; top: 0px;transform: rotate(0deg);}
+  100% { left: 150px; top: 170px;transform: rotate(360deg);}
 }
 
 #sample4{
-  animation: moveimg4 0.7s infinite;
+  animation: moveimg4 0.5s infinite;
   position: relative;
 
 }
 @keyframes moveimg5 {
   0% { left: 70px; top: 0px;transform: rotate(0deg);}
-  100% { left: 80px; top: 250px;transform: rotate(360deg); }
+  100% { left: 70px; top: 170px;transform: rotate(360deg); }
 }
 
 #sample5{
@@ -69,8 +69,8 @@
 
 }
 @keyframes moveimg6 {
-  0% { left: 35px; top: 0px;}
-  100% { left: 40px; top: 250px;}
+  0% { left: 10px; top: 0px;}
+  100% { left: 10px; top: 180px;}
 }
 
 #sample6{
