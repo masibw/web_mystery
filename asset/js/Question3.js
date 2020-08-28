@@ -1,4 +1,15 @@
+
 $(function () {
+  $('.lazyload').css({
+    opacity: 0
+  })
+
+  setTimeout(() => {
+    $('.lazyload').css({
+      opacity: "1"
+    })
+    console.log('ready')
+  }, 1000)
   var canvas2 = document.getElementById("child");
   if (!canvas2 || !canvas2.getContext) return false;
   var ctx2 = canvas2.getContext("2d");
