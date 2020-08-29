@@ -64,11 +64,9 @@ $(function () {
           isDrawing = false;
       });
   
-  setTimeout(() => {
     $('.lazyload').css({
       opacity: "1"
     })
-  }, 1000)
 });
 $(window).on("touchmove.noScroll", function (e) {
   e.preventDefault();
