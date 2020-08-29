@@ -1,3 +1,27 @@
+function drawOverlay(ctx2) {
+
+  var d = new $.Deferred;
+  const layerImage = new Image();
+  layerImage.src = "./img/scr2.png";
+
+  layerImage.width = $(".lazyload").width();
+  layerImage.height = $(".lazyload").height();
+
+
+  layerImage.onload = () => {
+    // 前面レイヤ
+    //回転
+    if ($(window).width() <= 480) {
+      ctx2.translate(0, $(window).height() / 2 - layerImage.height / 2)
+    }
+
+    ctx2.drawImage(layerImage, 0, 0, layerImage.width, layerImage.height);
+  };
+
+  return d.promise()
+}
+
+
 
 $(function () {
   $('.lazyload').css({
@@ -23,22 +47,26 @@ $(function () {
   $("canvas").get(1).width = $(window).width();
   $("canvas").get(1).height = $(window).height();
 
-  const layerImage = new Image();
-    layerImage.src = "./img/scr2.png";
+//   const layerImage = new Image();
+//   layerImage.src = "./img/scr2.png";
 
-       layerImage.width = $(".lazyload").width();
-       layerImage.height = $(".lazyload").height();
+//   layerImage.width = $(".lazyload").width();
+//   layerImage.height = $(".lazyload").height();
 
  
-    layerImage.onload = () => {
-       // 前面レイヤ
-  //回転
-        if ($(window).width() <= 480) {
-           ctx2.translate(0,$(window).height()/2-layerImage.height/2)
-          }
+//   layerImage.onload = () => {
+//        // 前面レイヤ
+//   //回転
+//         if ($(window).width() <= 480) {
+//            ctx2.translate(0,$(window).height()/2-layerImage.height/2)
+//           }
         
- ctx2.drawImage(layerImage, 0, 0, layerImage.width, layerImage.height);
-  };
+//  ctx2.drawImage(layerImage, 0, 0, layerImage.width, layerImage.height);
+//   };
+  
+  drawOverlay(ctx2).then($('.lazyload').css({
+    opacity: "1"
+  }))
 
   $("#child")
     .on("mousedown touchstart", function (e) {
@@ -63,10 +91,6 @@ $(function () {
       .on("mouseup touchend", function (e) {
           isDrawing = false;
       });
-  
-    $('.lazyload').css({
-      opacity: "1"
-    })
 });
 $(window).on("touchmove.noScroll", function (e) {
   e.preventDefault();
