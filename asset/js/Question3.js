@@ -22,7 +22,7 @@ $(function () {
   $("canvas").get(1).height = $(window).height();
 
   const layerImage = new Image();
-  layerImage.src = "./img/scr2.png";
+  layerImage.src = "./img/scr2-min.png";
 
   layerImage.width = $(".lazyload").width();
   layerImage.height = $(".lazyload").height();
