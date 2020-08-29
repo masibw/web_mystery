@@ -5,6 +5,8 @@ body {
   background-attachment: fixed;
   background-size: 100% 100%;
   margin:0;
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  user-select: none;
 }
 
 #button{
@@ -62,4 +64,9 @@ img{
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
   z-index: 1;
+  padding: 0%;
+}
+.arrow{
+  padding: 0%;
+  border-style: none;
 }

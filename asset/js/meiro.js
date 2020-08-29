@@ -254,7 +254,7 @@
           if (touch_position === 'right') ball.x += 4;
           if (touch_position === 'down') ball.y += 4;
         }
-        if(Math.round(ball.y/8)===35 && (Math.round(ball.x/8+2)===16 ||Math.round(ball.x/8+2)===17||Math.round(ball.x/8+2)===18)){
+        if((Math.round(ball.y/8)===35 ||Math.round(ball.y/8)===36 )&& (Math.round(ball.x/8+2)===16 ||Math.round(ball.x/8+2)===17||Math.round(ball.x/8+2)===18)){
           window.location.href = './shinkeatariyear.html';
           }
         // ページ移動
