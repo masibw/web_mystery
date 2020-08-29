@@ -64,9 +64,7 @@ $(function () {
 //  ctx2.drawImage(layerImage, 0, 0, layerImage.width, layerImage.height);
 //   };
   
-  drawOverlay(ctx2).then($('.lazyload').css({
-    opacity: "1"
-  }))
+  drawOverlay(ctx2).then($('#outer').append('<img class="lazyload" src="./img/scr1.png" alt=""/>'))
 
   $("#child")
     .on("mousedown touchstart", function (e) {
