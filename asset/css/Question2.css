@@ -43,7 +43,7 @@ p{
 }
 
 img{
-  pointer-events: none;
+  /* pointer-events: none; */
   -webkit-user-select: none; /* Chrome, Safari, and Opera */
   user-select: none;
   -webkit-touch-callout: none;
