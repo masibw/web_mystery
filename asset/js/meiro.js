@@ -127,8 +127,13 @@
     let ball = new Object();
     ball.img = new Image();
     ball.img.src = './img/kaizokusen_24px.png';
+<<<<<<< HEAD
     ball.x =48;
     ball.y =48;
+=======
+    ball.x =47;
+    ball.y =47;
+>>>>>>> 210573cbba986e387ca57403941bde102b407642
     ball.move = 0;
     //タッチのオブジェクトを作成
     let touch = new Object();
@@ -165,16 +170,26 @@
       const num2 = 38;
       const num3 = 39;
       const num4 = 40;
-      //マウスが押された時、keydownfunc関数（かんすう）を呼び出す
-        left.addEventListener("mousedown", {event:num1,handleEvent:keydownfunc});
-        up.addEventListener("mousedown", { event: num2, handleEvent: keydownfunc });
-        right.addEventListener("mousedown", { event: num3, handleEvent: keydownfunc });
-        down.addEventListener("mousedown", { event: num4, handleEvent: keydownfunc });
-        // マウスが放（はな）された時、keydownfunc関数（かんすう）を呼び出す
-        left.addEventListener("mouseup", { event: num1, handleEvent: keyupfunc });
-        up.addEventListener("mouseup", { event: num2, handleEvent: keyupfunc });
-        right.addEventListener("mouseup", { event: num3, handleEvent: keyupfunc });
-        down.addEventListener("mouseup", { event: num4, handleEvent: keyupfunc });
+      //タッチされた時、keydownfunc関数を呼び出す
+        left.addEventListener("touchstart", {event:num1,handleEvent:keydownfunc});
+        up.addEventListener("touchstart", { event: num2, handleEvent: keydownfunc });
+        right.addEventListener("touchstart", { event: num3, handleEvent: keydownfunc });
+        down.addEventListener("touchstart", { event: num4, handleEvent: keydownfunc });
+        // タッチされた時、keydownfunc関数（かんすう）を呼び出す
+        left.addEventListener("touchend", { event: num1, handleEvent: keyupfunc });
+        up.addEventListener("touchend", { event: num2, handleEvent: keyupfunc });
+        right.addEventListener("touchend", { event: num3, handleEvent: keyupfunc });
+        down.addEventListener("touchend", { event: num4, handleEvent: keyupfunc });
+      // //マウスが押された時、keydownfunc関数（かんすう）を呼び出す
+      //   left.addEventListener("mousedown", {event:num1,handleEvent:keydownfunc});
+      //   up.addEventListener("mousedown", { event: num2, handleEvent: keydownfunc });
+      //   right.addEventListener("mousedown", { event: num3, handleEvent: keydownfunc });
+      //   down.addEventListener("mousedown", { event: num4, handleEvent: keydownfunc });
+      //   // マウスが放（はな）された時、keydownfunc関数（かんすう）を呼び出す
+      //   left.addEventListener("mouseup", { event: num1, handleEvent: keyupfunc });
+      //   up.addEventListener("mouseup", { event: num2, handleEvent: keyupfunc });
+      //   right.addEventListener("mouseup", { event: num3, handleEvent: keyupfunc });
+      //   down.addEventListener("mouseup", { event: num4, handleEvent: keyupfunc });
         main()
       }
 
@@ -234,21 +249,27 @@
               touch_position = 'down';
               y--;
             }
-
           }
         }
         // ball.moveが0より大きい場合は、4pxずつ移動を続ける
-              if (ball.move > 0) {
-                ball.move -= 32;
+        if (ball.move > 0) {
+          ball.move -= 32;
           if (touch_position === 'left') ball.x -= 4;
           if (touch_position === 'up') ball.y -= 4;
           if (touch_position === 'right') ball.x += 4;
           if (touch_position === 'down') ball.y += 4;
         }
+<<<<<<< HEAD
         //ページ移動
         if(36<=ball.y<=38 && 16<=ball.x<=18){
           window.location.href = 'shinkeatariyear.html';
           }
+=======
+        if((Math.round(ball.y/8)===35 ||Math.round(ball.y/8)===36 )&& (Math.round(ball.x/8+2)===16 ||Math.round(ball.x/8+2)===17||Math.round(ball.x/8+2)===18)){
+          window.location.href = './shinkeatariyear.html';
+          }
+        // ページ移動
+>>>>>>> 210573cbba986e387ca57403941bde102b407642
           requestAnimationFrame(main);
         }
 

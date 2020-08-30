@@ -1,3 +1,5 @@
+
+
 $(function () {
   var canvas2 = document.getElementById("child");
   if (!canvas2 || !canvas2.getContext) return false;
@@ -20,13 +22,13 @@ $(function () {
   $("canvas").get(1).height = $(window).height();
 
   const layerImage = new Image();
-    layerImage.src = "./img/scr2.png";
+  layerImage.src = "./img/scr2-min.png";
 
-       layerImage.width = $(".lazyload").width();
-       layerImage.height = $(".lazyload").height();
+  layerImage.width = $(".lazyload").width();
+  layerImage.height = $(".lazyload").height();
 
  
-    layerImage.onload = () => {
+  layerImage.onload = () => {
        // 前面レイヤ
   //回転
         if ($(window).width() <= 480) {
@@ -59,6 +61,9 @@ $(function () {
       .on("mouseup touchend", function (e) {
           isDrawing = false;
       });
+  
+  $('.lazyload').attr("src","./img/scr1.png")
+
 });
 $(window).on("touchmove.noScroll", function (e) {
   e.preventDefault();
