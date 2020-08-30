@@ -40,11 +40,10 @@ p{
 @media screen and (max-width: 667px) {
   #kaji{margin: 0% 20% 20% 5%;}
 }
-/*
+
 img{
-  width: 100px;
-  height: 100px;
-} */
+  pointer-events: none;
+}
 
 
 #outer{
