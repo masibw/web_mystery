@@ -29,6 +29,10 @@ p{
   margin-left: 55%;
   font-family: "HGP創英角ゴシックUB,MS UI Gothic標準";
 }
+@media screen and (max-width: 667px) {
+  p{margin-left: 63%;
+  font-size: 0.8rem;}
+}
 #kaji{
   /* margin:18% 30% 80% 30%; */
   position: absolute;
@@ -38,18 +42,15 @@ p{
   -webkit-transform: translateY(-50%) translateX(-50%); */
   z-index:-1;
 }
-@media screen and (max-width: 667px) {
-  #kaji{margin: 0% 20% 20% 5%;}
-}
-
+/* @media screen and (max-width: 667px) {
+  #kaji{margin: 0% 30% 20% 5%;}
+} */
 img{
   /* pointer-events: none; */
   -webkit-user-select: none; /* Chrome, Safari, and Opera */
   user-select: none;
   -webkit-touch-callout: none;
 }
-
-
 #outer{
   position:relative;
   height:100vh;
@@ -64,6 +65,10 @@ img{
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
   opacity:0.9;
+  z-index: -2;
+}
+@media screen and (max-width: 667px) {
+  #mycanvas{margin: 0% 100% 5% 0;}
 }
 #arrows{
   position: absolute;
@@ -75,7 +80,7 @@ img{
   margin: 2.4rem 2rem 0rem 2rem;
 }
 @media screen and (max-width: 667px) {
-  #arrows{ margin:0% 10% 0% 8%; }
+  #arrows{ margin:6% 0% 0% 6%; }
 }
 .arrow{
   padding: 0%;
