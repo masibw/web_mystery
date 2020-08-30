@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 210573cbba986e387ca57403941bde102b407642
 body {
   background-image:url(../../img/background.png);
   background-repeat: no-repeat;
@@ -21,8 +25,11 @@ body {
   color: aliceblue;
 }
 
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> 210573cbba986e387ca57403941bde102b407642
 p{
   display: inline-block;
   margin-left: 55%;
@@ -56,7 +63,11 @@ img{
   top: 50%;
   left: 35%;
   transform: translateY(-50%) translateX(-50%);
+<<<<<<< HEAD
+	-webkit-transform: translateY(-50%) translateX(-50%);
+=======
   -webkit-transform: translateY(-50%) translateX(-50%);
+>>>>>>> 210573cbba986e387ca57403941bde102b407642
   opacity:0.9;
 }
 #arrows{
