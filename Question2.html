@@ -2,34 +2,35 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>迷路</title>
+    <title>第二問</title>
     <link rel="stylesheet" href="./asset/css/Question2.css">
+    <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
   </head>
 
 <body>
   <div id="outer">
-    <p>見えない壁があります.</br>印を操作してゴールまでの道のりを探してください</p>
+    <br><br><p>見えない壁がある。<br>矢印を操作して<br>ゴールまでの道のりを探せ。</p>
     <canvas id="mycanvas" width="360" height="360">
       </canvas>
 
-  <div id="arrows">
-  <img width="60" height="60"></img>
-  <img src="./img/up.png" id="up">
-  <div width="60" height="60"></div>
-  <img src="./img/left.png" id="left">
-  <img width="60" height="60"></img>
-  <img src="./img/right.png" id="right">
-  <div width="60" height="60"></div>
-  <img width="60" height="60"></img>
-  <img src="./img/down.png" id="down">
+  <div id="arrows" width="120" height="120">
+  <div width="60" height="60" class="arrow"></div>
+  <img src="./img/up.png" id="up"  oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" />
+  <div width="60" height="60" class="arrow"></div>
+  <img src="./img/left.png" id="left"  oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" />
+  <div width="60" height="60" class="arrow"></div>
+  <img src="./img/right.png" id="right"  oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" />
+  <!-- <div width="60" height="60" class="arrow"></div><br> -->
+  <div width="60" height="60" class="arrow"></div>
+  <img src="./img/down.png" id="down"  oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" />
   </div>
-  <img src="./img/rudder.png" id="kaji">
+  <img src="./img/rudder.png" id="kaji"  oncontextmenu="return false;" onselectstart="return false;" onmousedown="return false;" />
     <!-- <div id="button">
       <div id="up">up</div>
       <div id="right">right</div>
       <div id="left">left</div>
       <div id="down">down</div>
-   </div> -->
+    </div> -->
   </div>
 
 

@@ -2,8 +2,9 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8" />
-  <title>4問目</title>
+  <title>第四問</title>
   <link rel="stylesheet" href="./asset/css/Question4.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <script src="./asset/js/jquery-3.5.1.min.js"></script>
 </head>
 <body>
@@ -16,8 +17,8 @@
 
       <li><span class="canclick" id="J">
           <p>J</p></span></li>
-      <li><span class="canclick" id="Y">
-          <p>Y</p></span></li>
+      <li><span class="canclick" id="M">
+          <p>M</p></span></li>
       <li><span class="canclick" id="C">
           <p>C</p></span></li>
       <li><span class="canclick" id="V">
@@ -51,8 +52,8 @@
             <p>N</p></span></span></li>
       <li><span> <img src="img/barrel.png"> <span class="canclick" id="E">
             <p>E</p></span></span></li>
-      <li><span> <img src="img/barrel.png"> <span class="canclick" id="M">
-            <p>M</p></span></span></li>
+      <li><span> <img src="img/barrel.png"> <span class="canclick" id="Y">
+            <p>Y</p></span></span></li>
       <li><span> <img src="img/barrel.png"> <span class="canclick" id="I">
             <p>I</p></span></span></li>
       <li><span> <img src="img/barrel.png"> <span class="canclick" id="T">
@@ -87,11 +88,11 @@
       e.target.style.color = "red"
       // console.log("string : " + +string)
       //文字列の長さが3を超えたら不要な分を消す
-      if (string.length === 4) {
-        //最初の文字の色を変える
-        domArray[0].style.color = "blue"
-        domArray = domArray.slice(1, 3)
-        string = string.slice(1, 3)
+      if(string.length===4){
+         //最初の文字の色を変える
+        domArray[0].style.color = "black"
+        domArray = domArray.slice(1, 4)
+        string = string.slice(1, 4)
         // domArray[0]
       }
       if (string.length === 3 && string === "GYM") {
