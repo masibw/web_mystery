@@ -15,8 +15,8 @@ body {
 
 #up,#right,#left,#down{
   background:#fbfaf9;
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   opacity: 0.8;
   color: aliceblue;
 }
@@ -26,19 +26,20 @@ body {
 p{
   display: inline-block;
   margin-left: 55%;
+  margin-top: 0;
   font-family: "HGP創英角ゴシックUB,MS UI Gothic標準";
 }
 @media screen and (max-width: 667px) {
   p{margin-left: 63%;
+    margin-bottom: 30%;
     font-size: 0.8rem;}
-    #mycanvas{margin: 0% 100% 5% 0;}
-    #arrows{ margin:6% 0% 0% 6%; }
+
 }
 #kaji{
   margin-top:0.5rem;
   position: absolute;
   top: 25%;
-  left: 53%;
+  left: 49%;
   /* transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%); */
   z-index:-1;
@@ -57,27 +58,47 @@ img{
   height:100vh;
   width:100vw;
 }
+
 #mycanvas{
   /* width:100%; */
   display:block;
   position: absolute;
   top: 50%;
-  left: 35%;
+  left: 30%;
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
   opacity:0.9;
   z-index: -2;
 }
 
+@media screen and (max-width: 667px) {
+ #mycanvas{
+   margin: 0 100% 5% 0;
+ }
+}
+
+
+
+
+
 #arrows{
   position: absolute;
-  top: 55%;
-  left: 65%;
+  top: 51.5%;
+  left: 64.5%;
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
   z-index: 1;
-  margin: 1.9rem 2rem 0rem 2.7rem;
+  margin:2.4rem 2rem 0rem 1.8rem;
 }
+@media screen and (max-width: 667px){
+  #arrows{margin: 6% 0 0 6%;}
+  #up,#right,#left,#down,div .arrow{
+    height:55px ;
+    width: 55px;
+  }
+  }
+
+
 
 .arrow{
   padding: 0%;
@@ -86,6 +107,6 @@ img{
 
 div .arrow{
   display:inline-block;
-  height:60px;
-  width:60px;
+  height:55px;
+  width:55px;
 }
